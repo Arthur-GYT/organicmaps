@@ -64,7 +64,7 @@
     android:layout_gravity="center_vertical"
     android:layout_weight="0"
     android:background="?attr/selectableItemBackgroundBorderless"
-    android:contentDescription="@null"
+    android:contentDescription="@string/voice_search"
     android:scaleType="center"
     app:srcCompat="@drawable/ic_mic_white"
     android:visibility="gone"
