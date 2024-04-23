@@ -811,6 +811,7 @@
 	<string name="zoom_in">Збільшити</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Зменшити</string>
+	<string name="voice_search">Голосовий пошук</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Адреса/блок</string>

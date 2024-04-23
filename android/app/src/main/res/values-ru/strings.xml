@@ -820,6 +820,7 @@
 	<string name="zoom_in">Приблизить</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Отдалить</string>
+	<string name="voice_search">Голосовой поиск</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Адрес/Блок</string>

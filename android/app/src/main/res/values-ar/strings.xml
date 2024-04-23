@@ -818,6 +818,7 @@
 	<string name="zoom_in">تكبير</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">تصغير</string>
+	<string name="voice_search">البحث الصوتي</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">العنوان / البلوك</string>

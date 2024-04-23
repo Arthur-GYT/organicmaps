@@ -727,6 +727,7 @@
 	<string name="zoom_in">Увеличаване на мащаба</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Увеличаване на мащаба</string>
+	<string name="voice_search">Гласово търсене</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Адрес/Блок</string>

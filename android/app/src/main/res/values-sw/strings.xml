@@ -325,6 +325,7 @@
 	<string name="zoom_in">Vuta karibu</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Kuza nje</string>
+	<string name="voice_search">Tafuta kwa sauti</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Anwani/Zuia</string>

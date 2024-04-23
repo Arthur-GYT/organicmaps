@@ -807,6 +807,7 @@
 	<string name="zoom_in">ズームイン</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">ズームアウト</string>
+	<string name="voice_search">音声検索</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">アドレス/ブロック</string>

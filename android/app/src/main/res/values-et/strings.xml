@@ -798,6 +798,7 @@
 	<string name="zoom_in">Suurendage</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Suurenda välja</string>
+	<string name="voice_search">Häälotsing</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Aadress/plokk</string>

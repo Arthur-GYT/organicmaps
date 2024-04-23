@@ -805,6 +805,7 @@
 	<string name="zoom_in">Μεγέθυνση</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Σμίκρυνση</string>
+	<string name="voice_search">Φωνητική αναζήτηση</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Διεύθυνση/Μπλοκ</string>

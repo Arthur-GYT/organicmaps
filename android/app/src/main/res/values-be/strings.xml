@@ -800,6 +800,7 @@
 	<string name="zoom_in">Наблізіць</string>
 	<!-- Accessibility text for the zoom-out button on the map -->
 	<string name="zoom_out">Аддаліць</string>
+	<string name="voice_search">Галасавы пошук</string>
 
 	<!-- SECTION: Types -->
 	<string name="type.addr_interpolation">Адрас/Блок</string>
