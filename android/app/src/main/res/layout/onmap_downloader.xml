@@ -67,7 +67,8 @@
         app:wheelSecondaryColor="?dividerHorizontal"
         app:wheelThickness="@dimen/margin_eighth"
         android:visibility="visible"
-        tools:visibility="visible"/>
+        tools:visibility="visible"
+        android:contentDescription="Test"/>
     </FrameLayout>
   </LinearLayout>
 </ScrollView>
