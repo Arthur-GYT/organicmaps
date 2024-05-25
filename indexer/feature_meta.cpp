@@ -130,6 +130,8 @@ bool Metadata::TypeFromString(string_view k, Metadata::EType & outType)
     outType = Metadata::FMD_DRIVE_THROUGH;
   else if (k == "website:menu")
     outType = Metadata::FMD_WEBSITE_MENU;
+  else if (k == "collection_times")
+    outType = Metadata::FMD_COLLECTION_TIMES;
   else
     return false;
 
