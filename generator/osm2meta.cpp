@@ -357,6 +357,11 @@ std::string MetadataTagProcessorImpl::ValidateAndFormat_drive_through(std::strin
   return {};
 }
 
+std::string MetadataTagProcessorImpl::ValidateAndFormat_smoking(std::string const & v)
+{
+  return v;
+}
+
 std::string MetadataTagProcessorImpl::ValidateAndFormat_duration(std::string const & v) const
 {
   if (!ftypes::IsWayWithDurationChecker::Instance()(m_params.m_types))
@@ -463,7 +468,6 @@ std::string MetadataTagProcessorImpl::ValidateAndFormat_duration(std::string con
   return format(hours);
 }
 
-
 MetadataTagProcessor::~MetadataTagProcessor()
 {
   if (!m_description.IsEmpty())
@@ -563,6 +567,7 @@ void MetadataTagProcessor::operator()(std::string const & k, std::string const &
   case Metadata::FMD_RATINGS:
   case Metadata::FMD_EXTERNAL_URI:
   case Metadata::FMD_WHEELCHAIR:
+  case Metadata::FMD_SMOKING: valid = ValidateAndFormat_smoking(v); break;
   case Metadata::FMD_COUNT: CHECK(false, (mdType, "should not be parsed from OSM."));
   }
 
