@@ -17,6 +17,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <optional>
+#include <regex>
 #include <unordered_map>
 #include <unordered_set>
 
@@ -353,6 +354,23 @@ std::string MetadataTagProcessorImpl::ValidateAndFormat_drive_through(std::strin
   return {};
 }
 
+std::string MetadataTagProcessorImpl::ValidateAndFormat_date(std::string v)
+{
+  static auto const s_dateRegex = std::regex(R"(^[0-9]{4}-[0-9]{2}-[0-9]{2}$)");
+  strings::AsciiToLower(v);
+  if (std::regex_match(v, s_dateRegex))
+    return v;
+  return {};
+}
+
+std::string MetadataTagProcessorImpl::ValidateAndFormat_unsigned_number(std::string v)
+{
+  strings::AsciiToLower(v);
+  if (stoi(v) >= 0)
+    return v;
+  return {};
+}
+
 std::string MetadataTagProcessorImpl::ValidateAndFormat_duration(std::string const & v) const
 {
   if (!ftypes::IsWayWithDurationChecker::Instance()(m_params.m_types))
@@ -550,6 +568,8 @@ void MetadataTagProcessor::operator()(std::string const & k, std::string const &
   case Metadata::FMD_CAPACITY: valid = ValidateAndFormat_capacity(v); break;
   case Metadata::FMD_LOCAL_REF: valid = ValidateAndFormat_local_ref(v); break;
   case Metadata::FMD_DRIVE_THROUGH: valid = ValidateAndFormat_drive_through(v); break;
+  case Metadata::FMD_POPULATION: valid = ValidateAndFormat_unsigned_number(v); break;
+  case Metadata::FMD_POPULATION_DATE: valid = ValidateAndFormat_date(v); break;
   // Metadata types we do not get from OSM.
   case Metadata::FMD_CUISINE:
   case Metadata::FMD_DESCRIPTION:   // processed separately
